@@ -34,7 +34,7 @@ if button and (url or query):
             urls,res = find_match(query,2)
             context= "\n\n".join(res)
             st.expander("Context").write(context)
-            prompt = qa.create_prompt(context,query)
+            prompt = qa.prompt(context,query)
             answer = qa.generate_answer(prompt)
             st.success("Answer: "+answer)
 
