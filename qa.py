@@ -2,7 +2,7 @@ import streamlit as st
 import openai
 
 # Authenticate with the OpenAI API key
-OPENAI_API_KEY = st.secrets.openai.api_key
+openai.api_key = st.secrets.openai.api_key
 
 
 def create_prompt(context,query):
