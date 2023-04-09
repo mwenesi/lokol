@@ -3,6 +3,7 @@ import openai
 
 # Authenticate with the OpenAI API key
 openai.api_key = st.secrets["openai"]["api_key"]
+st.write("openai:", st.secrets["openai"]["api_key"])
 
 def create_prompt(context,query):
     header = "You are an expert on East African countries. Answer the question and you can deviate from the provided context if neccessary, and if the answer is not contained within the text and requires some latest information to be updated, print 'Sorry Not Sufficient context to answer query' \n"
