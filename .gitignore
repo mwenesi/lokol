@@ -1,0 +1,12 @@
+# ignore files with .pyc extension
+*.pyc
+
+# ignore the virtual environment folder
+.venv/
+
+# ignore files in the logs folder
+logs/*
+
+.history/
+
+.streamlit/
